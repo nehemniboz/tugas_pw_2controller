@@ -6,14 +6,59 @@ use Illuminate\Http\Request;
 
 class MahasiswaController extends Controller
 {
-    public function view($npm)
+    /**
+     * Display a listing of the resource.
+     */
+    public function index($npm)
     {
-        $nama = 'LORD_NEHEMIAALS KING OF ONE';
-        $npm = 'G1A021007';
-        
+        $nama = 'riska';
+        $npm = 'G1A021003';
 
 
-        return view('mahasiswa.view', compact('npm', 'nama'));
+        return view('mahasiswa', compact('npm', 'nama'));
+    }
+    public function create()
+    {
+        //
     }
 
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function show(string $id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(string $id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, string $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(string $id)
+    {
+        //
+    }
 }
